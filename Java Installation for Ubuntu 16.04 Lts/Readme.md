@@ -15,7 +15,7 @@ This is for the installation of java in your Ubuntu 17.04. It is a shell script 
 
 	sudo apt-get purge openjdk-\*
 
-3.Download this [file](https://drive.google.com/file/d/0B6tK150jyMyOVERQYVdKOTRrWXc/view?usp=sharing).
+3.Download this [file](https://drive.google.com/file/d/0B6tK150jyMyOcE1DY1M5S2N6dlE/view?usp=sharing).
 **Note : The Shell Script is created by Aswin R Prasad..**
 
 4.Change directory to file location and make it executable.

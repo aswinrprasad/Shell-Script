@@ -16,3 +16,4 @@ source /etc/profile
 echo "The Installation is Complete ..."
 echo "Checking if java is installed and it's version ..."
 java -version
+javac -version
