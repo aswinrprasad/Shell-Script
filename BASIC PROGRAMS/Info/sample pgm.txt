@@ -1,0 +1,41 @@
+
+
+1. Write a shell script to determine whether a given number is a prime number or not.  
+a. Interactively.  b. By command line arguments.  
+
+#!/bin/bash
+# SCRIPT: prime1.sh
+# USAGE : ./prime1.sh
+# PURPOSE: Finds whether given number is prime or not
+#####################################################################
+
+echo -n "Enter a number: "
+read num
+i=2
+
+while [ $i -lt $num ]
+do
+  if [ `expr $num % $i` -eq 0 ]
+  then
+      echo "$num is not a prime number"
+      echo "Since it is divisible by $i"
+      exit
+  fi
+  i=`expr $i + 1`
+done
+
+echo "$num is a prime number "
+
+Output:
+[root@venu ]# ./prime1.sh
+Enter a number: 1879
+1879 is a prime number
+[root@venu ]# ./prime1.sh
+Enter a number: 119
+119 is not a prime number
+Since it is divisible by 7
+
+Using here string you can supply input non interactively.
+
+[root@venu ]# ./prime1.sh  <<<2239
+Enter a number: 2239 is a prime number
